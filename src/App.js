@@ -35,7 +35,7 @@ export default function App() {
     console.log(event.target.value);
     guessing = emojiDic[event.target.value];
     if (guessing === undefined && event.target.value !== "") {
-      guessing = "emoji Not Found";
+      guessing = "Emoji Not Found";
     }
 
     setGuessing(guessing);
@@ -48,15 +48,18 @@ export default function App() {
 
   return (
     <div className="App">
+      <h1>Emoji Guessing App</h1>
       <input onChange={onChangeListener} />
       <h2>{guessing}</h2>
-      {emojiList.map((item) => {
-        return (
-          <span key={item} onClick={() => onClickListener(item)}>
-            {item}
-          </span>
-        );
-      })}
+      <div className="emoji">
+        {emojiList.map((item) => {
+          return (
+            <span key={item} onClick={() => onClickListener(item)}>
+              {item}
+            </span>
+          );
+        })}
+      </div>
     </div>
   );
 }

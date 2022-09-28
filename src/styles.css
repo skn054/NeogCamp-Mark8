@@ -6,3 +6,39 @@
 span {
   cursor: pointer;
 }
+
+input {
+  margin: 50px;
+  border: 2.5px solid black;
+  height: 25px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+span {
+  /* border-radius: 2px; */
+  display: inline-block;
+  cursor: pointer;
+  width: 10px;
+  height: 15px;
+  padding: 10px;
+}
+
+h1 {
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: white;
+  max-width: 500px;
+  margin: auto;
+
+  border: 2.5px;
+}
+
+div .emoji {
+  border-radius: 50px;
+  margin: auto;
+  padding: 15px;
+  height: 100px;
+  width: 500px;
+  background-color: blueviolet;
+}
